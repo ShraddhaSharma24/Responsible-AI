@@ -1,0 +1,53 @@
+# Machine Unlearning with CNN on MNIST
+
+## Project Overview
+This project demonstrates **Machine Unlearning** by training a Convolutional Neural Network (CNN) on the **MNIST dataset**, then selectively removing data corresponding to a specific class (digit **7**) and retraining the model. The impact of unlearning is evaluated by comparing model accuracy before and after the removal.
+
+## Project Structure
+```
+Machine-Unlearning/
+│-- dataset/                 # Dataset loading and processing
+│-- notebook/                # Jupyter/Colab notebook (training + unlearning)
+│-- results/                 # Saved models and evaluation results
+│   │-- initial_model.h5     # Model before unlearning
+│   │-- unlearned_model.h5   # Model after unlearning
+│   │-- accuracy_plot.png    # Accuracy comparison plot
+│-- machine_unlearning.py    # Python script for training & unlearning
+│-- README.md                # Project documentation
+```
+
+## Implementation Steps
+1. **Data Preparation:** Load and preprocess the **MNIST** dataset.
+2. **CNN Training:** Train a **Convolutional Neural Network** on the full dataset.
+3. **Unlearning Process:** Remove all instances of digit **7** and retrain the model.
+4. **Evaluation:** Compare accuracy before and after unlearning using plots and metrics.
+
+## Results
+- The trained CNN model achieves high accuracy on MNIST.
+- After removing class **7** and retraining, accuracy is re-evaluated.
+- The impact of unlearning is visualized in **results/accuracy_plot.png**.
+
+## How to Run the Project
+1. Clone this repository:
+   ```bash
+   git clone https://github.com/yourusername/Responsible-AI.git
+   cd Responsible-AI/Machine-Unlearning
+   ```
+2. Run the training & unlearning script:
+   ```bash
+   python machine_unlearning.py
+   ```
+3. View results in the `results/` folder.
+
+## Dependencies
+- TensorFlow
+- NumPy
+- Matplotlib
+
+## Future Enhancements
+- Implementing Federated Unlearning.
+- Exploring Differential Privacy techniques for stronger guarantees.
+
+---
+**Contributors:** Your Name  
+**License:** MIT License
