@@ -1,9 +1,9 @@
-# Machine Unlearning with CNN on MNIST
+Machine Unlearning with CNN on MNIST
 
-## Project Overview
+Project Overview
 This project demonstrates **Machine Unlearning** by training a Convolutional Neural Network (CNN) on the **MNIST dataset**, then selectively removing data corresponding to a specific class (digit **7**) and retraining the model. The impact of unlearning is evaluated by comparing model accuracy before and after the removal.
 
-## Project Structure
+ Project Structure
 ```
 Machine-Unlearning/
 │-- dataset/                 # Dataset loading and processing
@@ -16,18 +16,18 @@ Machine-Unlearning/
 │-- README.md                # Project documentation
 ```
 
-## Implementation Steps
+Implementation Steps
 1. **Data Preparation:** Load and preprocess the **MNIST** dataset.
 2. **CNN Training:** Train a **Convolutional Neural Network** on the full dataset.
 3. **Unlearning Process:** Remove all instances of digit **7** and retrain the model.
 4. **Evaluation:** Compare accuracy before and after unlearning using plots and metrics.
 
-## Results
+Results
 - The trained CNN model achieves high accuracy on MNIST.
 - After removing class **7** and retraining, accuracy is re-evaluated.
 - The impact of unlearning is visualized in **results/accuracy_plot.png**.
 
-## How to Run the Project
+How to Run the Project
 1. Clone this repository:
    ```bash
    git clone https://github.com/yourusername/Responsible-AI.git
