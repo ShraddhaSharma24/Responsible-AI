@@ -1,1 +1,7 @@
+import shutil
+
+# Move the saved plots to the results folder
+shutil.move("accuracy_comparison.png", f"{results_folder}/accuracy_comparison.png")
+shutil.move("disparate_impact_comparison.png", f"{results_folder}/disparate_impact_comparison.png")
+shutil.move("statistical_parity_comparison.png", f"{results_folder}/statistical_parity_comparison.png")
 
