@@ -1,51 +1,90 @@
-# Responsible-AI
+This repository explores Responsible AI techniques — focusing on Bias Detection & Mitigation, Machine Unlearning, and other methods to build fair, transparent, and trustworthy AI systems.
+It contains modular projects that showcase research and practical implementations across different aspects of AI fairness, explainability, and accountability.
 
-# **Bias Detection and Mitigation in AI Models**
+📂 Repository Structure
+responsible-ai-lab/
+│
+├── bias-detection-mitigation/    # Fairness evaluation & mitigation in ML models
+│   └── README.md
+│
+├── machine-unlearning/           # Forgetting learned data in neural networks
+│   └── README.md
+│
+├── requirements.txt              # Common dependencies
+└── README.md                     # Main repo documentation
 
-## **📌 Project Overview**
-This project analyzes bias in AI models trained on the **UCI Adult Dataset** for income prediction. It evaluates fairness metrics and applies bias mitigation techniques to improve model fairness while maintaining accuracy.
+🚀 Projects
+🔹 Bias Detection & Mitigation
 
-## **📊 Dataset**
-- **UCI Adult Dataset**: Predicts income level (`<=50K` or `>50K`) based on features like age, education, gender, race, etc.
+Dataset: UCI Adult Dataset (Income Prediction)
 
-## **🚀 Key Features**
-- Implemented **Logistic Regression & Decision Tree** models for income prediction.
-- Used **AI Fairness 360 (AIF360)** to measure fairness metrics (**Disparate Impact, Statistical Parity Difference**).
-- Applied **reweighting techniques** to mitigate bias while preserving model accuracy.
-- Visualized the impact of bias mitigation through comparative analysis.
+Models: Logistic Regression, Decision Trees
 
-## **🛠 Tech Stack**
-- **Programming:** Python
-- **Libraries:** Scikit-learn, Pandas, NumPy, AI Fairness 360, Matplotlib
+Tools: AI Fairness 360 (AIF360)
 
-## **📂 Project Structure**
-```
-📦 Bias-Detection-AI
-├── 📄 README.md  # Project documentation
-├── 📄 bias_detection.ipynb  # Jupyter Notebook with code implementation
-├── 📄 requirements.txt  # Required libraries
-└── 📂 data  # Dataset folder (UCI Adult Dataset)
-```
+Features:
 
-## **⚙️ Installation & Setup**
-1️⃣ Clone this repository:
-```bash
-git clone https://github.com/your-username/Bias-Detection-AI.git
-cd Bias-Detection-AI
-```
-2️⃣ Install dependencies:
-```bash
+Measured fairness metrics (Disparate Impact, Statistical Parity Difference)
+
+Applied reweighting techniques to reduce bias
+
+Visualized fairness vs accuracy trade-offs
+
+Results: Reduced bias while maintaining ~85% accuracy.
+
+🔹 Machine Unlearning with CNN on MNIST
+
+Task: Train CNN on MNIST and then selectively remove digit 7.
+
+Features:
+
+CNN trained on full dataset
+
+Unlearning process: retrained model without class 7
+
+Compared accuracy before & after unlearning
+
+Results: Accuracy impact visualized in plots; models saved before/after unlearning.
+
+Future Work: Federated Unlearning, Differential Privacy.
+
+🛠 Tech Stack
+
+Languages: Python
+
+ML/DL Libraries: TensorFlow, Scikit-learn
+
+Fairness & XAI: AI Fairness 360 (AIF360), SHAP, LIME (planned)
+
+Utilities: NumPy, Pandas, Matplotlib
+
+⚙️ Installation & Setup
+
+1️⃣ Clone this repository
+
+git clone https://github.com/your-username/responsible-ai-lab.git
+cd responsible-ai-lab
+
+
+2️⃣ Install dependencies
+
 pip install -r requirements.txt
-```
-3️⃣ Run the Jupyter Notebook:
-```bash
-jupyter notebook bias_detection.ipynb
-```
-
-## **📈 Results**
-- **Baseline Model Accuracy:** ~85.6%
-- **Mitigated Model Accuracy:** ~85.5%
-- **Bias Metrics Before Mitigation:** Higher disparity in fairness metrics.
-- **Bias Metrics After Mitigation:** Reduced bias while maintaining performance.
 
 
+3️⃣ Explore individual projects inside their folders
+
+📈 Future Directions
+
+✅ Bias detection & mitigation in ML models
+
+✅ Machine unlearning with CNNs
+
+🔜 Explainability across modalities (SHAP, LIME, Grad-CAM)
+
+🔜 Responsible AI for RAG & LLM agents
+
+🔜 Privacy-preserving AI (Differential Privacy, Federated Learning)
+
+👩‍💻 Contributors
+
+Shraddha Sharma
